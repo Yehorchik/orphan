@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <title>Document</title>
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <div class="header">
+
+    <div class="nav">
+      <img  ng-click='addRemoveRedClass()' class="nav_button" src="../assets/navigation.jpg">
+    </div>
+
+    <div class="header_content">
+      <p id="company_name">YOUNGLINE</p>
+      <img id="logo_heart" src="../assets/heart_icon.gif">
+    </div>
+  </div>
+
+  <div class="navigation" >
+    <a [routerLink]="['/contact']">Contact</a>
+    <a [routerLink]="['/donation']">Donation</a>
+    <a [routerLink]="['/about']">About</a>
+    <a [routerLink]="['/stories']">Stories</a>
+  </div>
+ 
+  <router-outlet></router-outlet>
+  
+</body>
+
+
+</html>
+
+
