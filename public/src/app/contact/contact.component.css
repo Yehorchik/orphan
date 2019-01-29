@@ -9,7 +9,9 @@
   color: white;
 }
 
-.wrapper h3, p, h2 {
+.wrapper h3,
+p,
+h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -44,9 +46,9 @@
 }
 
 .yehor {
-font-size: 16px;
-letter-spacing: 0.5px;
-margin-left: 60px
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-left: 60px
 }
 
 #yehor_name {
@@ -178,4 +180,16 @@ ul li:hover:nth-child(4) a:before {
 
 ul li:hover:nth-child(4) a:after {
   background: #f34565;
+}
+
+ul li:hover:nth-child(5) a {
+  background: #4285F4;
+}
+
+ul li:hover:nth-child(5) a:before {
+  background: rgb(54, 111, 204);
+}
+
+ul li:hover:nth-child(5) a:after {
+  background: rgb(79, 142, 245);
 }
