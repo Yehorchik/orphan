@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   show = false;
-  toggle(){
-    
-    this.show != this.show;
-    console.log(this.show);
+  showNav(){
+    if(this.show ==false){
+      this.show =true;
+    }
+    else{
+      this.show = false
+    }
   }
 }
 
