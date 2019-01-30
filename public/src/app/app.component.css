@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani|Ubuntu');
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -124,3 +125,87 @@
     border-bottom: 1px solid white;
   }
   
+=======
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../assets/body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.header_content {
+  color: white;
+  font-size: 24px;
+  text-align: right;
+  position: absolute;
+  left: 82%;
+  top: 2%;
+}
+
+#company_name {
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  color: #F5B041;
+}
+
+#logo_heart {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  display: inline-block;
+
+}
+
+#company_name {
+  display: inline-block;
+  vertical-align: sub;
+}
+
+.nav_button {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 5px;
+  transition: transform 0.3s ease-out;
+}
+
+.nav_button:hover {
+  transform: rotate(360deg);
+}
+
+.nav,
+.header_content {
+  display: inline-block;
+}
+
+.navigation {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  width: 200px;
+  height: auto;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: orange;
+  position: relative;
+  margin: 70px;
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+
+.navigation a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+

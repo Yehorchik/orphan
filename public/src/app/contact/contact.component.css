@@ -1,0 +1,195 @@
+.wrapper {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 75%;
+  height: 85%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  color: white;
+}
+
+.wrapper h3,
+p,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper h2 {
+  text-transform: uppercase;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.wrapper #project_paragraph {
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  text-align: left;
+  letter-spacing: 1px;
+  text-indent: 40px;
+  line-height: 25px;
+  padding: 0 40px 0px 40px;
+}
+
+#project_title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+#find_us {
+  text-align: left;
+  font-size: 24px;
+  margin-left: 40px;
+}
+
+.yehor {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-left: 60px
+}
+
+#yehor_name {
+  font-weight: bold;
+}
+
+.robin {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-left: 60px;
+  padding-top: 80px;
+}
+
+#robin_name {
+  font-weight: bold;
+}
+
+ul {
+  position: absolute;
+  top: 70%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+ul li a .fab {
+  font-size: 20px;
+  color: #262626;
+  line-height: 40px;
+  transition: .5s;
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: .5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul li a:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transition: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+  color: pink;
+}
+
+ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+ul li a:hover>* {
+  color: white;
+}
+
+ul li:hover:nth-child(1) a {
+  background: #007bb5;
+}
+
+ul li:hover:nth-child(1) a:before {
+  background: #00405e;
+}
+
+ul li:hover:nth-child(1) a:after {
+  background: #009be2;
+}
+
+ul li:hover:nth-child(2) a {
+  background: #6cc644;
+}
+
+ul li:hover:nth-child(2) a:before {
+  background: #4d9130;
+}
+
+ul li:hover:nth-child(2) a:after {
+  background: #7feb51;
+}
+
+ul li:hover:nth-child(3) a {
+  background: #3b5999;
+}
+
+ul li:hover:nth-child(3) a:before {
+  background: #2e4577;
+}
+
+ul li:hover:nth-child(3) a:after {
+  background: #4b71c4;
+}
+
+ul li:hover:nth-child(4) a {
+  background: #e4405f;
+}
+
+ul li:hover:nth-child(4) a:before {
+  background: #b8334b;
+}
+
+ul li:hover:nth-child(4) a:after {
+  background: #f34565;
+}
+
+ul li:hover:nth-child(5) a {
+  background: #4285F4;
+}
+
+ul li:hover:nth-child(5) a:before {
+  background: rgb(54, 111, 204);
+}
+
+ul li:hover:nth-child(5) a:after {
+  background: rgb(79, 142, 245);
+}
