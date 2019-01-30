@@ -16,7 +16,7 @@
   <div class="header">
 
     <div class="nav">
-      <img  ng-click='addRemoveRedClass()' class="nav_button" src="../assets/navigation.jpg">
+      <img  (click)='showNav()' class="nav_button" src="../assets/navigation.jpg">
     </div>
 
     <div class="header_content">
@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <div class="navigation" >
+  <div class="navigation" *ngIf='show==true' >
     <a [routerLink]="['/contact']">Contact</a>
     <a [routerLink]="['/donation']">Donation</a>
     <a [routerLink]="['/about']">About</a>
