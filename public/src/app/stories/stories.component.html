@@ -1,3 +1,23 @@
-<p>
-  stories works!
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+  <div class="story">
+      <div class="box" *ngFor='let user of users'>
+        <div class="layer1">
+          <p class="name">{{user.first_name}}</p>
+          <p class="name">{{user.last_name}} :</p>
+          <p class='comment'>"{{user.comment}}"</p>
+        </div>
+        <div class="layer2">
+        </div>
+        <div class="layer3">
+        </div>
+      </div>
+  </div>
+</body>
+</html>

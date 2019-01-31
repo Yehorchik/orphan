@@ -28,7 +28,7 @@ export class DonationComponent implements OnInit {
     card : {
       card_first_name : "",
       card_last_name : "",
-      card_number : 0,
+      card_number : "",
       expiration_date : "",
       security_code :0 ,
       billing_adress :""

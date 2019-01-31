@@ -19,6 +19,16 @@ module.exports = {
         .catch(err =>{
             res.json(err);
         })
+    },
+
+    stories : (req,res) =>{
+        Donation.find({comment : {$ne : ""}})
+        .then(results =>{
+            res.json(results);
+        })
+        .catch(err =>{
+            res.json(err);
+        })
     }
     
 }
