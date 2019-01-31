@@ -9,23 +9,17 @@
 </head>
 <body>
   <div class="header">
-    <div class="nav">
-      <img  (click)='showNav()' class="nav_button" src="../assets/navigation.jpg">
+    <div class="navigation">
+      <a class = "cool-link" [routerLink]="['/about']">About</a>
+      <a class = "cool-link" [routerLink]="['/donation']">Donation</a>
+      <a class = "cool-link" [routerLink]="['/stories']">Stories</a>
+      <a class = "cool-link" [routerLink]="['/contact']">Contact</a>
     </div>
-    <div class="header_content">
+    <div class="heading">
       <p id="company_name">YOUNGLINE</p>
       <img id="logo_heart" src="../assets/heart_icon.gif">
     </div>
   </div>
-
-  <div class="navigation" *ngIf='show==true' >
-    <a [routerLink]="['/contact']">Contact</a>
-    <a [routerLink]="['/donation']">Donation</a>
-    <a [routerLink]="['/about']">About</a>
-    <a [routerLink]="['/stories']">Stories</a>
-  </div>
   <router-outlet></router-outlet>
 </body>
 </html>
-
-

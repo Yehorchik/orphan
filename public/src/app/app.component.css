@@ -1,152 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani|Ubuntu');
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-  @-webkit-keyframes fadeInUp {
-      from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-      }
-    
-      to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
-    }
-    
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-      }
-    
-      to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
-    }
-
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-
-  body {
-    background-image: url("../assets/body.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-  
-  .header_content {
-    color: white;
-    font-size: 24px;
-    text-align: right;
-    position: absolute;
-    left: 82%;
-    top: 2%;
-  }
-  
-  #company_name {
-    font-family: 'Indie Flower', cursive;
-    font-size: 40px;
-    color: #F5B041;
-  }
-  #logo_heart {
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    display: inline-block;
-  
-  }
-  #company_name {
-    display: inline-block;
-    vertical-align: sub;
-  }
-  
-  .nav_button {
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    margin-left: 20px;
-    margin-top: 5px;
-    transition: transform 0.3s ease-out;
-  }
-  .nav_button:hover {
-    transform: rotate(360deg);
-  }
-  .nav, .header_content {
-    display: inline-block;
-  }
-  .navigation{
-    background-color:rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    width: 200px;
-    height: auto;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-  }
-  .navigation a{
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Ubuntu' ,sans-serif;
-    color: orange;
-    position: relative;
-    margin: 70px;
-    display: inline-block;
-    transition: transform 0.3s ease-out;
-  }
-  .navigation a:hover{
-    color: white;
-    border-bottom: 1px solid white;
-  }
-  
-
-* {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  background-image: url("../assets/body.jpg");
+  height: 100vh;
+  background-image: url("../assets/refugee_kids.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-}
-
-.header_content {
-  color: white;
-  font-size: 24px;
-  text-align: right;
-  position: absolute;
-  left: 82%;
-  top: 2%;
 }
 
 #company_name {
@@ -160,7 +23,6 @@ body {
   height: 40px;
   vertical-align: middle;
   display: inline-block;
-
 }
 
 #company_name {
@@ -168,44 +30,44 @@ body {
   vertical-align: sub;
 }
 
-.nav_button {
-  width: 30px;
-  height: 30px;
-  padding: 10px;
-  margin-left: 20px;
-  margin-top: 5px;
-  transition: transform 0.3s ease-out;
-}
-
-.nav_button:hover {
-  transform: rotate(360deg);
-}
-
-.nav,
-.header_content {
-  display: inline-block;
-}
-
 .navigation {
-  background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
-  width: 200px;
-  height: auto;
+  margin: 20px;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .navigation a {
-  text-decoration: none;
+  color: #212121;
+  font-family: Ubuntu;
   font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
-  color: orange;
-  position: relative;
-  margin: 70px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 40px;
   display: inline-block;
-  transition: transform 0.3s ease-out;
 }
 
-.navigation a:hover {
-  color: white;
-  border-bottom: 1px solid white;
+.heading {
+  float: right;
+  padding-right: 30px;
 }
 
+.navigation, .heading {
+  display: inline-block;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #F5B041;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+
+}
