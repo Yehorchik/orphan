@@ -24,4 +24,7 @@ export class HttpService {
   removeOneLike(id,hello){
     return this._http.put('/api/donations/remove/'+id,hello)
   }
+  findWeather(city){
+    return this._http.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=90da99e4ec8202561ec8ac9db4c3e4d0`);
+  }
 }
