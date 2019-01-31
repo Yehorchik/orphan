@@ -2,21 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 1px dotted red;
+p {
+  color: white;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-#donation_title {
-  text-align: center;
-  font-family: Ubuntu;
-  padding: 10px;
+h3 {
+  color: white;
 }
 
 .donation {
   color: aliceblue;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   position: absolute;
   left: 25%;
   top: 15%;
@@ -34,9 +32,10 @@
   width: 1px;
 }
 
-.child_image {
+.child {
   width: 400px;
-  justify-content: center
+  position: relative;
+  left: 25%;
 }
 
 hr {

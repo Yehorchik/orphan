@@ -6,49 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-  <title>YoungLine Donation</title>
 </head>
 
 <body>
   <div class="donation">
-    <h3 id = "donation_title">Every Child is Our Child</h3>
-    <img class="child_image" src="../assets/child.jpg">
-    <p>Your investment will reunite children who have been separated from their families, and give children around the
-      world a safe, loving home.</p>
+    <h3>Every Child is Our Child</h3>
+    <img class="child" src="../assets/child.jpg">
+    <p>Your investment will reunite children who have been separated from their
+      families, and give children around the world a safe, loving home.</p>
     <hr>
-
     <h3>Your Information</h3>
-
-    <!-- First Name Input Form -->
-    <p>First Name<span>*</span>:</p>
-    <input class="f_name" type="text" name="user.first_name" [(ngModel)]="user.first_name">
+    <p>First Name<span>*</span>:</p> <input class="f_name" type="text" name="user.first_name" [(ngModel)]="user.first_name">
     <p class="error" *ngIf="createErrors.errors" style="color:red">{{createErrors.errors.first_name.message}}</p>
     <br>
-
-    <!-- Last Name Input Form -->
-    <p>Last Name<span>*</span>:</p><input class="l_name" type="text" name="user.last_name" [(ngModel)]="user.last_name">
+    <p>Last Name<span>*</span>: </p> <input class="l_name" type="text" name="user.last_name" [(ngModel)]="user.last_name">
     <p class="error" *ngIf="createErrors.errors" style="color:red">{{createErrors.errors.last_name.message}}</p>
     <br>
-
-    <!-- Email Input Form -->
     <p>Email<span>*</span> : </p><input class="email" type="text" name="user.email" [(ngModel)]="user.email">
     <p class="error1" *ngIf="createErrors.errors" style="color:red">{{createErrors.errors.email.message}}</p>
     <br>
-
-    <!-- Comment Input Form -->
     <p class="comment">Comment(optional):</p><textarea name="user.comment" [(ngModel)]="user.comment" rows="4" cols="80"
       placeholder="Let us know why you donated??  Your comment will appear publicly"></textarea>
     <hr>
-
-    <!-- Payment Amount Input Form -->
     <h3>Payment Details</h3>
     <div class="amount">
       <p>Amount for donation<span>*</span>:</p>
       <input type="text" placeholder="$0.00" name="user.donation" [(ngModel)]="user.donation">
       <p class="error2" *ngIf="createErrors.errors" style="color:red">{{createErrors.errors.donation.message}}</p>
     </div>
-
-    <!-- Payment Card Input Form -->
     <div class="donation_cardname">
       <p>Name on the Card<span>*</span>: </p>
       <input class="first_name" type="text" placeholder="First Name" name="user.card.card_first_name" [(ngModel)]="user.card.card_first_name">
@@ -56,8 +41,6 @@
       <p class="error4" *ngIf="createErrors.errors" style="color:red">{{createErrors.errors.card.errors.card_first_name.message}}</p>
       <p class="error4" *ngIf="createErrors.errors" style="color:red">{{createErrors.errors.card.errors.card_last_name.message}}</p>
     </div>
-
-    <!-- Payment Card Number Input Form -->
     <div class="card_number">
       <p>Card Number<span>*</span>:</p>
       <input type="text" placehoder="Card Number" name="user.card.card_number" [(ngModel)]="user.card.card_number">
@@ -65,15 +48,11 @@
       <br>
       <img class='card' src="../assets/credit-cards.png">
     </div>
-
-    <!-- Payment Card Expiration Date Input Form -->
     <div class="exp_date">
       <p>Expiration Date<span>*</span>:</p>
       <input type="date" name="user.card.expiration_date" [(ngModel)]="user.card.expiration_date">
       <p class="error1" *ngIf="createErrors.errors" style="color:red">{{createErrors.errors.card.errors.expiration_date.message}}</p>
     </div>
-
-    <!-- Payment Card Security Code Input Form -->
     <div class="sec_code">
       <p>Security code<span>*</span>:</p>
       <input type="text" name="user.card.security_code" [(ngModel)]="user.card.security_code">
@@ -85,15 +64,11 @@
           card. For American Express it is the four digits on the front of the card.</p>
       </div>
     </div>
-
-    <!-- Payment Card Billing Address Input Form -->
     <div class="bill_adress">
       <p>Billing Adress<span>*</span>:</p>
       <input type="text" placeholder="Enter your billing adress" name="user.card.billing_adress" [(ngModel)]="user.card.billing_adress">
       <p class="error1" *ngIf="createErrors.errors" style="color:red">{{createErrors.errors.card.errors.billing_adress.message}}</p>
     </div>
-
-    <!-- Input Form Submit Button -->
     <button class="donate" (click)='sendDonation(user)'><i id="heart" class="far fa-heart">Donate</i></button>
 
   </div>
