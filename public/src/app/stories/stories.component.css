@@ -39,7 +39,7 @@ p{
    height: 140%;
    border: 1px solid #fff;
    box-sizing :border-box;
-   transition:0.5s;
+   transition: all 1,5s;
    background: #262626;
    z-index: 3;
    overflow: scroll;
@@ -55,10 +55,8 @@ p{
     top: -10px;
     left: 10px;
     box-shadow: 0 , 5px, 20px ,rgba(0, 0, 0, 1);
-    background: #ff9966; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff9966, #ff5e62); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff9966, #ff5e62); 
-    cursor: pointer;
+    background-color: #ff9966;
+    background-image: linear-gradient(to right,rgb(255,153,102) ,rgb(255,94,98));
 }
 
 .box .layer2{
@@ -70,7 +68,7 @@ p{
     border: 1px solid #fff;
     padding: 20px;
     box-sizing :border-box;
-    transition:0.5s;
+    transition: all 1.5s;
     background: #262626;
     z-index: 2;
     background : rgba(0, 0, 0, 0.2);
@@ -79,9 +77,9 @@ p{
     top: 0;
     left: 0;
     box-shadow: 0 , 5px, 20px ,rgba(0, 0, 0, 1);
-    background: #642b73; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #642b73, #c6426e); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #642b73, #c6426e);
+    background-color: #642b73; /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(to right, #642b73, #c6426e); /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(to right, #642b73, #c6426e);
  }
 
  .box .layer3{
@@ -93,7 +91,7 @@ p{
     border: 1px solid #fff;
     padding: 20px;
     box-sizing :border-box;
-    transition:0.5s;
+    transition:all 1.5s;
     background: #262626;
     z-index: 1;
     background : rgba(0, 0, 0, 0.2);
@@ -102,9 +100,9 @@ p{
     top: 10px;
     left: -10px;
     box-shadow: 0 , 5px, 20px ,rgba(0, 0, 0, 1);
-    background: #CB356B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #CB356B;  /* fallback for old browsers */
+    background-color: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
  .name{
