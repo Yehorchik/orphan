@@ -1,163 +1,199 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-p{
-    color: white;
-    display: inline-block;
-    font-family: 'Ubuntu', sans-serif;
-}
-h3{ 
-    color: white;
-}
-.donation{
-    color: aliceblue;
-    background-color:rgba(0, 0, 0, 0.95);
-    position: absolute;
-    left: 25%;
-    top: 15%;
-    border: 1px solid black;
-    width: 900px;
-    height: 570px;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 30px;
-    overflow-y: scroll;
-    padding-right: 20px;
-}
-::-webkit-scrollbar{
-    width: 1px;
-}
-.child{
-    width: 400px;
-    position: relative;
-    left: 25%;
-}
-hr{
-    color: white;
-}
-span{
-    color: red;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px dotted red;
 }
 
-.f_name , .l_name {
-    position: relative;
-    left: 10%;
-}
-.email{
-    position: relative;
-    left: 14%;
-}
-textarea{
-    position: relative;
-    left: 20%;
-}
-.comment{
-    position: absolute;
-}
-.donation_cardname input{
-    margin: 10px;
-}
-.card{
-    width: 200px;
-}
-i{
-   position: relative;
-    color: orange;
-    left: 9%
-}
-#heart{
-    font-size: 20px;
-}
-.first_name{
-    position: relative;
-    left: 3%;
-}
-.card_number input{
-    position: relative;
-    left: 8%;
-}
-.exp_date  input{
-    position: relative;
-    left: 6%;
-}
-.sec_code input{
-    position: relative;
-    left: 8%;
-}
-.bill_adress input{
-    position: relative;
-    left: 8%;
-}
-.donate{
-    background-color: transparent;
-    margin-top: 20px;
-    position: relative;
-    left: 40%;
-    border-radius :50px;
-    width: 150px;
-    outline: none;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    border: none;
-}
-.donate i{
-    position: relative;
-    left: 0%;
-}
-.donation input , textarea{
- border-radius: 5px;
- padding: 5px;
- font-family: 'Roboto Mono', monospace;
- outline: none;
-}
-.donate:hover{
-    background-color: #FF8C00;
-    box-shadow: 0px 15px 20px rgba(255, 140, 0, 0.4);
+#donation_title {
+  text-align: center;
+  font-family: Ubuntu;
+  padding: 10px;
 }
 
-.donate:hover i{
-    color: #fff;
+.donation {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  border: 1px solid black;
+  width: 900px;
+  height: 570px;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 30px;
+  overflow-y: scroll;
+  padding-right: 20px;
 }
-.amount input{
-    position: relative;
-    left: 2%;
+
+::-webkit-scrollbar {
+  width: 1px;
 }
-.error{
-    position: relative;
-    left: 15%;
+
+.child_image {
+  width: 400px;
+  justify-content: center
 }
-.error1{
-    position: relative;
-    left: 19%;
+
+hr {
+  color: white;
 }
-.error2{
-    position: relative;
-    left: 7%;
+
+span {
+  color: red;
 }
-.error , .error1 , .error2{
-   font-family: 'Exo 2', sans-serif;
+
+.f_name,
+.l_name {
+  position: relative;
+  left: 10%;
 }
-.help{
-    position : absolute;
-    margin-left: 140px;
-    display: inline-block;
-    height: 50px;
-    width: 150px;
-    color: orange;
-    font-size: 10px;
-    margin-top: -45px;
-    padding: 30px;
-    border: 2px solid grey;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(71,75,81,0.8);
+
+.email {
+  position: relative;
+  left: 14%;
+}
+
+textarea {
+  position: relative;
+  left: 20%;
+}
+
+.comment {
+  position: absolute;
+}
+
+.donation_cardname input {
+  margin: 10px;
+}
+
+.card {
+  width: 200px;
+}
+
+i {
+  position: relative;
+  color: orange;
+  left: 9%
+}
+
+#heart {
+  font-size: 20px;
+}
+
+.first_name {
+  position: relative;
+  left: 3%;
+}
+
+.card_number input {
+  position: relative;
+  left: 8%;
+}
+
+.exp_date input {
+  position: relative;
+  left: 6%;
+}
+
+.sec_code input {
+  position: relative;
+  left: 8%;
+}
+
+.bill_adress input {
+  position: relative;
+  left: 8%;
+}
+
+.donate {
+  background-color: transparent;
+  margin-top: 20px;
+  position: relative;
+  left: 40%;
+  border-radius: 50px;
+  width: 150px;
+  outline: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border: none;
+}
+
+.donate i {
+  position: relative;
+  left: 0%;
+}
+
+.donation input,
+textarea {
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Roboto Mono', monospace;
+  outline: none;
+}
+
+.donate:hover {
+  background-color: #FF8C00;
+  box-shadow: 0px 15px 20px rgba(255, 140, 0, 0.4);
+}
+
+.donate:hover i {
+  color: #fff;
+}
+
+.amount input {
+  position: relative;
+  left: 2%;
+}
+
+.error {
+  position: relative;
+  left: 15%;
+}
+
+.error1 {
+  position: relative;
+  left: 19%;
+}
+
+.error2 {
+  position: relative;
+  left: 7%;
+}
+
+.error,
+.error1,
+.error2 {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.help {
+  position: absolute;
+  margin-left: 140px;
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  color: orange;
+  font-size: 10px;
+  margin-top: -45px;
+  padding: 30px;
+  border: 2px solid grey;
+  border-radius: 30px;
+  text-align: center;
+  background-color: rgba(71, 75, 81, 0.8);
 
 }
-.help p{
-    position: relative;
-    top:-30%;
+
+.help p {
+  position: relative;
+  top: -30%;
 }
-.error4{
-    position: relative;
-    left: 4%;
+
+.error4 {
+  position: relative;
+  left: 4%;
 }
