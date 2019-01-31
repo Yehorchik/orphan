@@ -7,7 +7,8 @@ import { HttpService } from '../http.service';
 })
 export class StoriesComponent implements OnInit {
   users : any =[];
-
+  hello : any
+  like =false;
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
@@ -21,4 +22,22 @@ export class StoriesComponent implements OnInit {
         console.log(this.users);
      })
    }
+   addLike(id){
+    if(this.like == false){
+      this._httpService.addOneLike(id,this.hello)
+      .subscribe(result =>{
+        this.allStories();
+        this.like =true;
+      })
+    }
+    else{
+      this._httpService.removeOneLike(id,this.hello)
+      .subscribe(result =>{
+        this.allStories();
+        this.like =false;
+      })
+    }
+   
+   }
+
 }

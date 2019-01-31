@@ -18,4 +18,10 @@ export class HttpService {
   createDonation(donation){
     return this._http.post('/api/donations',donation);
   }
+  addOneLike(id,hello){
+    return this._http.put('/api/donations/'+id,hello);
+  } 
+  removeOneLike(id,hello){
+    return this._http.put('/api/donations/remove/'+id,hello)
+  }
 }
