@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
   <title>Document</title>
 </head>
 <body>
@@ -18,6 +19,38 @@
     <div class="heading">
       <p id="company_name">YOUNGLINE</p>
       <img id="logo_heart" src="../assets/heart_icon.gif">
+    </div>
+  </div>
+  <div class="weather">
+    <p>Search the weather in your city <span><i class="fas fa-city"></i></span></p>
+    <input type="text" name="name" [(ngModel)]="city.name">
+    <div *ngIf="new_city.main && new_city.weather">
+      <p>Weather : {{ new_city.weather[0].main }} </p>
+      <p>Temperature :{{ new_city.main.temp }} C</p>
+      <p>Pressure : {{ new_city.main.pressure }} mb</p>
+      <p>Wind Speed : {{ new_city.wind.speed }} km/h</p>
+      <div *ngIf="new_city.weather[0].main == 'Clouds'">
+          <img src="../assets/cloudy-day-1.svg" >
+      </div>  
+      <div *ngIf="new_city.weather[0].main == 'Thunderstorm'">
+          <img src="../assets/thunder.svg" >
+      </div>  
+      <div *ngIf="new_city.weather[0].main == 'Drizzle'">
+          <img src="../assets/rainy-1.svg" >
+      </div> 
+      <div *ngIf="new_city.weather[0].main == 'Rain'">
+          <img src="../assets/rainy-7.svg" >
+      </div> 
+      <div *ngIf="new_city.weather[0].main == 'Snow'">
+          <img src="../assets/snowy-6.svg" >
+      </div> 
+      <div *ngIf="new_city.weather[0].main == 'Clear'">
+          <img src="../assets/day.svg" >
+      </div> 
+      <div *ngIf="new_city.weather[0].main == 'Haze'">
+          <img src="../assets/1530368.png" >
+      </div> 
+      <button (click)="searchWeather()">Search</button>
     </div>
   </div>
   <router-outlet></router-outlet>
