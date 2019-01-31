@@ -12,6 +12,9 @@ export class HttpService {
   getAllDonations(){
     return this._http.get('/api/donations');
   }
+  getAllStories(){
+    return this._http.get('/api/donations/stories');
+  }
   createDonation(donation){
     return this._http.post('/api/donations',donation);
   }
