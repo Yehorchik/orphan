@@ -16,6 +16,7 @@ const DonationSchema = new mongoose.Schema({
     email : { type : String , required : [true, 'Email is required']},
     donation : {type : Number , required: true, min:[1, 'Donation is required , at least 1 dollar']},
     comment : {type : String},
+    likes : {type : Number , default: 0},
     card : CardSchema,
 },{timestamps : true})
 module.exports = mongoose.model("Donation" , DonationSchema);
