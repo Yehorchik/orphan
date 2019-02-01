@@ -50,6 +50,9 @@
       <div *ngIf="new_city.weather[0].main == 'Haze'">
           <img src="../assets/1530368.png" >
       </div> 
+      <div *ngIf="new_city.weather[0].main == 'Fog'">
+          <img src="../assets/fog.gif" >
+      </div> 
       <button (click)="searchWeather()">Search</button>
     </div>
   </div>

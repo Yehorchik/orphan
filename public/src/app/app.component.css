@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background-image: url("../assets/refugee_kids.jpg");
+  background-image: url("../assets/main_one.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -74,6 +74,8 @@ body {
 }
 
 .weather{
+  position: relative;
+  margin-top: 10%;
   border : 1px solid aliceblue;
   display: inline-block;
   height: auto;
